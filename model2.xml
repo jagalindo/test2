@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<feature_model name="FeatureIDE model">
+    <feature_tree>
+:r ShoppingCart(_r) :m User(_r_1) :g (_r_1_2) [1,*] : Login(_r_1_2_3) : SignUp(_r_1_2_4) :m Payment(_r_2) :g (_r_2_5) [1,*] : CreditCard(_r_2_5_6) : PayPal(_r_2_5_7) :m Delivery(_r_3) :g (_r_3_8) [1,1] : Standard(_r_3_8_9) : Express(_r_3_8_10) :o OrderTracker(_r_4) :o PriceDiscount(_r_4_11) constraint_1:_r_3_8_10 or _r_4_11 constraint_2:~_r_2_5_7 or _r_3_8_10
+</feature_tree>
+    <constraints>
+</constraints>
+</feature_model>
